@@ -80,3 +80,11 @@
 ;; FILE COMPLETION
 ;; ================================
 (setq read-file-name-completion-ignore-case t)
+
+;; ================================
+;; TEMA CUSTOMIZADO
+;; ================================
+
+(mapc #'disable-theme custom-enabled-themes)
+(load-theme 'doom-wilmersdorf t)
+;;(load-theme 'doom-flatwhite t)
